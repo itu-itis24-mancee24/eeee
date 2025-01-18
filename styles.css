@@ -1,0 +1,248 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #8e44ad, #3498db);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 50px 20px;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  font-style: italic;
+  color: #f1c40f;
+}
+
+/* About Me Section */
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 30px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+.profile-photo {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: 5px solid white;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-photo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.4);
+}
+
+.about-text {
+  flex: 2;
+  max-width: 500px;
+  padding: 10px;
+}
+
+.about-text .highlight {
+  color: #f1c40f;
+  font-weight: bold;
+}
+
+/* Call-to-Action Section */
+.cta-container {
+  margin: 40px auto;
+  padding: 40px;
+  background: linear-gradient(135deg, #cb98e2, #32053b);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  animation: glow 2s infinite alternate;
+  max-width: 800px;
+}
+
+.cta-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cta-text {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: white;
+  background: #232247;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button:hover {
+  background: #27ae60;
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #f1c40f;
+  font-size: 0.9rem;
+}
+
+.footer-highlight {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* Animations */
+@keyframes glow {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+#game-container {
+  margin: 30px auto;
+  max-width: 600px;
+  background: linear-gradient(135deg, #87abe8, #b0c7d6);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  color: #333;
+}
+
+.status-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.score-text, .lives-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.score-text {
+  color: green;
+}
+
+.lives-text {
+  color: red;
+  animation: pulseLives 1s infinite alternate;
+}
+
+/* Word Display */
+.word-display {
+  font-size: 2rem;
+  letter-spacing: 10px;
+  margin: 20px 0;
+  color: #4a90e2;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Input Field */
+.input-field {
+  padding: 10px;
+  font-size: 1.2rem;
+  width: 70%;
+  margin: 10px 0;
+  border: 2px solid #4a90e2;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #f39c12;
+  box-shadow: 0 0 5px #f39c12;
+}
+
+/* Buttons */
+.game-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background: #4a90e2;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 5px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.game-button:hover {
+  background: #27ae60;
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Message Section */
+.message-container {
+  margin-top: 20px;
+  min-height: 50px;
+}
+
+.message-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  color: #f1c40f;
+  font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes pulseLives {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}

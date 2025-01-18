@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Eldi's World</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1 class="title">✨ Welcome to My World ✨</h1>
+      <p class="subtitle">Dive into creativity, learning, and fun!</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="about-me" class="about-container">
+      <div class="about-image">
+        <img src="assets/my-photo.jpg" alt="My Photo" id="profile-photo" class="profile-photo">
+      </div>
+      <div class="about-text">
+        <h2>About Me ✨</h2>
+        <p>
+          Hi, my name is <span class="highlight">Eldi Mance</span>. I'm currently studying at 
+          <span class="highlight">Istanbul Technical University (ITU)</span>. 
+          I’m passionate about <span class="highlight">Computer Engineering</span>, 
+          <span class="highlight">Software Development</span>, and 
+          <span class="highlight">Artificial Intelligence</span>.
+        </p>
+      </div>
+    </section>
+
+    <section id="cta" class="cta-container">
+      <h2 class="cta-title">🎮 Ready to Test Your Skills? 🎮</h2>
+      <p class="cta-text">Click the button below to start the Word Prediction Game and showcase your talent!</p>
+      <button id="play-game" onclick="navigateToGame()" class="cta-button">🚀 Start the Game</button>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer-text">© 2025 <span class="footer-highlight">@Eldi Mance</span> | Designed with 💖</p>
+  </footer>
+
+  <script>
+    function navigateToGame() {
+      window.location.href = "game.html";
+    }
+  </script>
+</body>
+</html>

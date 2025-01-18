@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Prediction Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1 class="title">🎮 Word Prediction Game 🎮</h1>
+      <p class="subtitle">Are you ready to test your guessing skills?</p>
+    </div>
+  </header>
+
+  <main id="game-container">
+    <section id="game-status" class="status-container">
+      <div class="status-box">
+        <p>🧩 <span class="label">Score:</span> <span id="score" class="score-text">0</span></p>
+      </div>
+      <div class="status-box">
+        <p>❤️ <span class="label">Lives:</span> <span id="lives" class="lives-text">3</span></p>
+      </div>
+    </section>
+
+    <section id="game-board" class="board-container">
+      <div id="word-display" class="word-display">_ _ _ _ _</div>
+      <div class="input-group">
+        <input 
+          type="text" 
+          id="guess-input" 
+          maxlength="5" 
+          placeholder="Enter a letter or word" 
+          class="input-field"
+          aria-label="Guess a letter or the full word">
+        <button id="guess-button" class="game-button">Submit</button>
+      </div>
+      <button id="reset-button" class="game-button hidden">Try Again</button>
+    </section>
+
+    <section id="game-messages" class="message-container">
+      <p id="message" class="message-text"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer-text">&copy; 2025 <span class="highlight">@ELDI MANCE</span> | Designed with 💖</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
